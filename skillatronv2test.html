@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>The skillatron test</title>
+</head>
+<body id="main">
+<center>
+<div id="head">
+<h1> THE CHALLENGE</h1>
+</div>
+</center>
+	<div style="position:absolute; right:180px; down=30px;">
+                <button width=20px height=20px onclick="change_col2W()">LIGHT THEME</button>
+	</div>
+              
+            <div style="position:absolute; right:280px; down=30px;">
+                   <button width=20px height=20px onclick="change_col2B()">DARK THEME</button>
+              </div>
+            
+
+	<div>
+		<center>
+		<textarea rows ="30" style="width:1000px;" name="grab" id="editor">
+
+		</textarea>
+		</center>
+	</div>
+
+		
+            
+               <div style="position:absolute; right:180px; down=30px;">
+               </div>
+
+
+ <script>
+  function change_col2W()
+   {    
+      document.getElementById('editor').style.background="white";
+       document.getElementById('editor').style.color="black";        
+   }
+
+
+
+function change_col2B()
+   {    
+     document.getElementById('editor').style.background="black"; 
+     document.getElementById('editor').style.color="white";
+   }
+
+</script>
+
+<div style="position:absolute; right:180px; down=30px;">
+ <button width=40px height=40px>submit</button>
+             </div>
+
+</body>
+</html>
