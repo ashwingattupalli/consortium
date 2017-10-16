@@ -57,7 +57,7 @@
             
     <div>
 	<center>
-	<textarea rows ="30" style="width:1000px;" name="grab" id="editor"> </textarea>
+	<textarea rows ="30" style="width:1000px;" name="grab" id="editor" onchange="intel_display();"> </textarea>
 	</center>
     </div>
 
@@ -75,6 +75,16 @@
              document.getElementById('editor').style.background="black"; 
              document.getElementById('editor').style.color="white";
          }
+	    
+	 function intel_display()
+	    {
+		   var color= document.getElementById('editor').value;
+		    if(color=="#include<stdio.h>")
+			     document.getElementById('editor').style.color="pink";
+		    else if(color=="void"||color=="while"||color="struct"||color=="do"||color=="for"||color=="if"||color=="else if")
+			      document.getElementById('editor').style.color="green";
+	    }	    
+			     
 
     </script>
     </div>
